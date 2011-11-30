@@ -1,1 +1,30 @@
 This is the source of the http://dwimperl.com/ web site
+
+
+
+Web site design ideas:
+
+DwimPerl itself does not yet have a logo. It needs one.
+DWIM = Do What I Mean
+Maybe something like "CPAN Inside" ?
+
+Main page: logo of Dwimperl, and that of Windows and Linux (Penguin)
+and Mac.
+
+A sign up form for newsletter on every page I think.
+(A single text box and a button)
+
+Separate page for Windows, Linux and Mac.
+Each page will have several sections for each type of the distribution:
+desktop, server (once they are ready).
+
+Show the logos of all the parts of Dwimperl
+(e.g. Strawberry Perl on the Windows Page)
+
+Padre,
+Moose,
+DBIx::Class
+SQLite
+Template Toolkit
+etc.
+
