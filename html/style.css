@@ -6,3 +6,16 @@ body {
  padding: 0px;
 }
 
+#body {
+  margin-left: 20px;
+  width: 1000px;
+}
+#main {
+  width: 600px;
+ float: left;
+}
+#right {
+ margin-top: 40px;
+ width: 280px;
+ float: right;
+}
