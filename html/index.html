@@ -16,24 +16,6 @@ as they are made available by their developers.
 </div>
 <div id="main">
 <h1>Do What I Mean</h1>
-<!--
-<h1>Dwim Perl for Linux</h1>
-<p>
-This is a plain perl distribution of perl 5.14.2 built on Ubuntu 11.10. It is a very experimental version use it with caution.
-</p>
-<p>
-Highlights:
-<ul>
-<li>perl 5.14.2</li>
-<li>DBD::SQLite</li>
-<li>Moose</li>
-<li>Dancer</li>
-<li>Plack</li>
-<li>Starman</li>
-</ul>
-</p>
-
--->
 
 <h2>DWIM Perl for Windows</h2>
 <p>
@@ -63,6 +45,36 @@ It contains:
 </ul>
 </p>
 
+<hr>
+
+<h1>DWIM Perl for Linux server</h1>
+<p>
+This is a plain perl distribution of perl 5.14.2 built on Ubuntu 11.10. It is a very experimental version use it with caution.
+</p>
+<p>
+The current release is <a href="http://dwimperl.googlecode.com/files/dwimperl5_14_2-32b-0.02.tar.gz">dwimperl5_14_2-32b-0.02.tar.gz</a>, released on 2012.03.13.
+</p>
+
+<p>
+Highlights:
+<ul>
+<li>perl 5.14.2</li>
+<li>DBD::SQLite 1.33</li>
+<li>Moose 2.0401</li>
+<li>Dancer 1.3080</li>
+<li>Plack 0.9985</li>
+<li>Starman 0.2014</li>
+</ul>
+<b>Instructions:</b><br>
+<ul>
+<li>Upload to your server.</li>
+<li>Unzip using tar xzf dwimperl5_14_2-32b-0.02.tar.gz</li>
+<li>move the directory to /opt/perl5_14_2/</li>
+<li>edit ~/.bashrc and add this to the end: export PATH=/opt/perl5_14_2/bin:$PATH</li>
+<li>reload it using  source ~/.bashrc</li>
+<li>perl -v</li>
+</ul>
+</p>
 
 <hr />
 <a href="/history.html">Earlier releases</a>
@@ -96,7 +108,7 @@ to find someone who will create the awesome web site this project deserves.
 
 <hr>
 <p>
-This package is being maintained by <a href="http://szabgab.com/contact.html">Gabor Szabo</a>.
+These packages are being maintained by <a href="http://szabgab.com/contact.html">Gabor Szabo</a>.
 </p>
 </div>
 
