@@ -18,7 +18,7 @@ foreach my $p (@pages) {
 	open my $fh, '<', "pages/$p";
 	my %params = ( content => '' );
 	while (my $row = <$fh>) {
-		chomp $row;
+		#chomp $row;
 		if ($row =~ /^=(\w+)\s*(.*)/) {
 			$params{$1} = $2;
 		} else {

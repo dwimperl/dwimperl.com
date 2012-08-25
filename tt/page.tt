@@ -62,9 +62,25 @@
 
     <div class="container-fluid">
       <div class="row-fluid">
+
+        <div class="span9">
+          <div class="hero-unit">
+            <h1><% subtitle %></h1>
+            <p></p>
+          </div>
+          <% content %>
+        </div><!--/span-->
+
         <div class="span3">
           <div class="well sidebar-nav">
+<p style="text-align:center">
+<a href="/windows.html"><img src="/img/alien/windows-logo.png" alt="for Windows"></a>
+<a href="/linux.html"><img src="/img/alien/linux-logo.png" alt="for Linux"></a>
+</p>
+<hr>
+<p>
 Want to get notified when a new release is published?
+</p>
 <p>
 The <a href="http://perlweekly.com/">Perl Weekly newsletter</a>
 includes announcements of DWIM Perl and major Perl projects
@@ -77,13 +93,7 @@ and on our <a href="https://plus.google.com/b/114304226993160810646/">Google+ Pa
 </p>
           </div><!--/.well -->
         </div><!--/span-->
-        <div class="span9">
-          <div class="hero-unit">
-            <h1><% subtitle %></h1>
-            <p></p>
-          </div>
-          <% content %>
-        </div><!--/span-->
+
       </div><!--/row-->
 
       <hr>
