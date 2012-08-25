@@ -1,7 +1,6 @@
 This is the source of the http://dwimperl.com/ web site
 
 
-
 Web site design ideas:
 
 DwimPerl itself does not yet have a logo. It needs one.
@@ -27,4 +26,14 @@ DBIx::Class
 SQLite
 Template Toolkit
 etc.
+
+
+==============================================
+
+The html/*.html files are generated running
+
+   perl bin/generate.pl
+
+and then manually uplaoded by Gabor.
+
 
