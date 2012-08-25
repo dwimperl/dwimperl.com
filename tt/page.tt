@@ -52,6 +52,9 @@
               <li <% IF linux   %>class="active"<% END %> ><a href="/linux.html">Linux</a></li>
               <li <% IF history %>class="active"<% END %> ><a href="/history.html">Earlier releases</a></li>
             </ul>
+            <ul class="nav pull-right">
+              <li <% IF legal %>class="active"<% END %>   ><a href="/legal.html">Legal</a></li>
+            </ul>
           </div><!--/.nav-collapse -->
         </div>
       </div>
@@ -76,7 +79,7 @@ and on our <a href="https://plus.google.com/b/114304226993160810646/">Google+ Pa
         </div><!--/span-->
         <div class="span9">
           <div class="hero-unit">
-            <h1><% title %></h1>
+            <h1><% subtitle %></h1>
             <p></p>
           </div>
           <% content %>
@@ -84,10 +87,6 @@ and on our <a href="https://plus.google.com/b/114304226993160810646/">Google+ Pa
       </div><!--/row-->
 
       <hr>
-
-      <footer>
-        <p>&copy; Gabor Szabo 2012</p>
-      </footer>
 
     </div><!--/.fluid-container-->
 

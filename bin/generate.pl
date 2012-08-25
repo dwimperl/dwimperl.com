@@ -26,7 +26,10 @@ foreach my $p (@pages) {
 		}
 	}
 	close $fh;
-	for my $os (qw(windows linux history)) {
+
+	$params{subtitle} ||= $params{title};
+
+	for my $os (qw(windows linux history legal)) {
 		if ($p eq "$os.html") {
 			$params{$os} = 1;
 		}
