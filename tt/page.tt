@@ -53,6 +53,8 @@
               <li <% IF history %>class="active"<% END %> ><a href="/history.html">Earlier releases</a></li>
             </ul>
             <ul class="nav pull-right">
+              <li><a href="http://www.facebook.com/DWIM.Perl"><img src="/img/facebook16.png" alt="Facebook Page" /></a></li>
+              <li><a href="https://plus.google.com/b/114304226993160810646/"><img src="/img/gplus-16.png" alt="Google+ Page" /></a>
               <li <% IF legal %>class="active"<% END %>   ><a href="/legal.html">Legal</a></li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -89,7 +91,7 @@ as they are made available by their developers.
 <hr>
 <p>
 New releases will be also announced on our new <a href="http://www.facebook.com/DWIM.Perl">Facebook page</a>
-and on our <a href="https://plus.google.com/b/114304226993160810646/">Google+ Page</a>
+and on our <a href="https://plus.google.com/b/114304226993160810646/">Google+ Page</a>.
 </p>
           </div><!--/.well -->
         </div><!--/span-->
