@@ -74,6 +74,11 @@
         </div><!--/span-->
 
         <div class="span3">
+<style>
+.sidebar-nav p {
+   padding: 10px;
+}
+</style>
           <div class="well sidebar-nav">
 <p style="text-align:center">
 <a href="/windows.html"><img src="/img/alien/windows-logo.png" alt="for Windows"></a>
