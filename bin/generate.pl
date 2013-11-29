@@ -1,7 +1,7 @@
 use strict;
 use warnings;
-use 5.012;
-use autodie;
+#use 5.012;
+#use autodie;
 
 use Template;
 use DateTime;
@@ -21,7 +21,7 @@ $sitemap .=   qq{<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n}
 
 
 foreach my $p (@pages) {
-	open my $fh, '<', "pages/$p";
+	open my $fh, '<', "pages/$p" or die $!;
 	my %params = ( content => '' );
 	while (my $row = <$fh>) {
 		#chomp $row;
