@@ -1,57 +1,257 @@
-=title DWIM Perl for Linux server
+=title DWIM Perl for Linux server - perl 5.20.1 - v2
 
 <img src="/img/alien/linux-logo.png" alt="Linux" />
 <p>
-This is a plain perl distribution of perl 5.18.1 built on CentOS 6.4 x64.
-It is a very experimental version - use it with caution.
+This is a distribution of perl 5.20.1 with a some additional CPAN-modules.
 </p>
 <p>
-Highlights:
+Content:
 <ul>
-<li>perl 5.18.1</li>
-<li><a href="https://metacpan.org/module/Test::Exception">Test::Exception</a> 0.32</li>
-<li><a href="https://metacpan.org/module/Test::MockObject">Test::MockObject</a> 1.20120301</li>
-<li><a href="https://metacpan.org/module/Test::More">Test::More</a> 1.001002</li>
-<li><a href="https://metacpan.org/module/Test::Most">Test::Most</a> 0.31</li>
-<li><a href="https://metacpan.org/module/Test::NoWarnings">Test::NoWarnings</a> 1.04</li>
-<li><a href="https://metacpan.org/module/Test::Output">Test::Output</a> 1.02</li>
-<li><a href="https://metacpan.org/module/Test::Perl::Critic">Test::Perl::Critic</a> 1.02</li>
-<li><a href="https://metacpan.org/module/Test::Pod">Test::Pod</a> 1.48</li>
-<li><a href="https://metacpan.org/module/Test::Pod::Coverage">Test::Pod::Coverage</a> 1.08</li>
-<li><a href="https://metacpan.org/module/Test::Script">Test::Script</a> 1.07</li>
-<li><a href="https://metacpan.org/module/Test::WWW::Mechanize">Test::WWW::Mechanize</a> 1.44</li>
-<li><a href="https://metacpan.org/module/Flickr::API">Flickr::API</a> 1.08</li>
-<li><a href="https://metacpan.org/module/Path::Tiny">Path::Tiny</a> 0.047</li>
-<li><a href="https://metacpan.org/module/Config::Tiny">Config::Tiny</a> 2.20</li>
-<li><a href="https://metacpan.org/module/DateTime">DateTime</a> 1.03</li>
-<li><a href="https://metacpan.org/module/Digest::SHA">Digest::SHA</a> 5.85</li>
-<li><a href="https://metacpan.org/module/Digest::SHA1">Digest::SHA1</a> 2.13</li>
-<li><a href="https://metacpan.org/module/DBI">DBI</a> 1.630</li>
-<li><a href="https://metacpan.org/module/DBD::SQLite">DBD::SQLite</a> 1.40</li>
-<li><a href="https://metacpan.org/module/Moo">Moo</a> 1.003001</li>
-<li><a href="https://metacpan.org/module/MooX::Options">MooX::Options</a> 4.001</li>
-<li><a href="https://metacpan.org/module/MooX::late">MooX::late</a> 0.014</li>
-<li><a href="https://metacpan.org/module/XML::NamespaceSupport">XML::NamespaceSupport</a> 1.11</li>
-<li><a href="https://metacpan.org/module/XML::SAX">XML::SAX</a> 0.99</li>
-<li><a href="https://metacpan.org/module/XML::LibXML">XML::LibXML</a> 2.0107</li>
+<li>perl 5.20.1</li>
+<li>For included modules see the enabled(!) entries in <a href="https://github.com/dwimperl/dwimperl-linux/blob/dwimperl-linux-5.20.1-2/cpanfile">this cpanfile</a></li>
 </ul>
-<b>Instructions:</b><br>
+
+
+<h3>Installation Instructions:</h3>
+
+<pre>
+$ cd
+$ wget http://dwimperl.com/download/dwimperl-linux-5.20.1-2-x86_64.tar.gz
+$ tar xzf dwimperl-linux-5.20.1-2-x86_64.tar.gz
+$ PATH=~/dwimperl-linux-5.20.1-2-x86_64/perl/bin:$PATH        # Add this to your ~/.bashrc to make it persistent
+$ perl dwimperl-linux-5.20.1-2-x86_64/perl/bin/reloc_perl dwimperl-linux-5.20.1-2-x86_64/perl/bin/
+</pre>
+
+To install additional CPAN modules type
+
+<pre>
+$ cpanm Module::Name
+</pre>
+
+<a href="/download/dwimperl-linux-5.10.1-2-x86_64.tar.gz"><img src="/img/download.png" alt="DWIM Perl 5.20.1.2 for Linux server" /></a>
+<p>
+released on 2014.09.25.
+</p>
+
+<h3>Earlier versions</h3>
 <ul>
-<li><a href="/download/dwimperl-linux-5.18.1-1-x86_64.tar.gz">Get the file</a> and upload it to your server.</li>
-
-<li>Unzip using tar xzf dwimperl-linux-5.18.1-1-x86_64.tar.gz</li>
-<li>Run dwimperl-linux-5.18.1-1-x86_64/perl/bin/perl -V</li>
-<li>Check out the README.txt that comes with the distribution</li>
+  <li><a href="/linux-5-14-2.html">Linux 5.14.2</a></li>
+  <li><a href="/linux-5-18-1.html">Linux 5.18.1</a></li>
 </ul>
-</p>
 
-<a href="/download/dwimperl-linux-5.18.1-1-x86_64.tar.gz"><img src="/img/download.png" alt="DWIM Perl 5.18.1 for Linux server" /></a>
-<p>
-released on 2013.11.29.
-</p>
+<h2>The detailed story</h2>
 
 <p>
-<b>Earlier versions</b><br>
-<a href="/linux-5-14-2.html">Linux 5.14.2</a>
-</p>
+DWIM Perl for Linux is being developed in the
+<a href="https://github.com/dwimperl/dwimperl-linux">dwimperl-linux</a> GitHub repository.
+The current version has been tagged
+<a href="https://github.com/dwimperl/dwimperl-linux/tree/dwimperl-linux-5.20.1-2">dwimperl-linux-5.20.1-2</a>.
+
+Installation starts with the following:
+
+<pre>
+$ wget http://dwimperl.com/download/dwimperl-linux-5.20.1-2-x86_64.tar.gz
+$ tar xzf dwimperl-linux-5.20.1-2-x86_64.tar.gz
+</pre>
+
+Then we can try if it works by typing:
+
+<pre>
+$ ./dwimperl-linux-5.20.1-2-x86_64/perl/bin/perl -v
+</pre>
+
+
+This is the expected output:
+
+
+<pre>
+This is perl 5, version 20, subversion 1 (v5.20.1) built for x86_64-linux
+
+Copyright 1987-2014, Larry Wall
+
+Perl may be copied only under the terms of either the Artistic License or the
+GNU General Public License, which may be found in the Perl 5 source kit.
+
+Complete documentation for Perl, including FAQ lists, should be found on
+this system using "man perl" or "perldoc perl".  If you have access to the
+Internet, point your browser at http://www.perl.org/, the Perl Home Page.
+</pre>
+
+
+We can also try the longer version:
+
+<pre>
+$ ./dwimperl-linux-5.20.1-2-x86_64/perl/bin/perl -V
+</pre>
+
+That will give the following output:
+
+<pre>
+Summary of my perl5 (revision 5 version 20 subversion 1) configuration:
+   
+  Platform:
+    osname=linux, osvers=2.6.18-308.1.1.el5, archname=x86_64-linux
+    uname='linux dwimperl 2.6.18-308.1.1.el5 #1 smp wed mar 7 04:16:51 est 2012 x86_64 x86_64 x86_64 gnulinux '
+    config_args='-des -Duserelocatableinc -Dprefix=/home/dwimperl/dwimperl-linux-5.20.1-1-x86_64/perl'
+    hint=recommended, useposix=true, d_sigaction=define
+    useithreads=undef, usemultiplicity=undef
+    use64bitint=define, use64bitall=define, uselongdouble=undef
+    usemymalloc=n, bincompat5005=undef
+  Compiler:
+    cc='cc', ccflags ='-fno-strict-aliasing -pipe -fstack-protector -I/usr/local/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    optimize='-O2',
+    cppflags='-fno-strict-aliasing -pipe -fstack-protector -I/usr/local/include'
+    ccversion='', gccversion='4.1.2 20080704 (Red Hat 4.1.2-54)', gccosandvers=''
+    intsize=4, longsize=8, ptrsize=8, doublesize=8, byteorder=12345678
+    d_longlong=define, longlongsize=8, d_longdbl=define, longdblsize=16
+    ivtype='long', ivsize=8, nvtype='double', nvsize=8, Off_t='off_t', lseeksize=8
+    alignbytes=8, prototype=define
+  Linker and Libraries:
+    ld='cc', ldflags =' -fstack-protector -L/usr/local/lib'
+    libpth=/usr/local/lib /usr/lib /lib /lib64 /usr/lib64 /usr/local/lib64
+    libs=-lnsl -ldl -lm -lcrypt -lutil -lc
+    perllibs=-lnsl -ldl -lm -lcrypt -lutil -lc
+    libc=libc-2.5.so, so=so, useshrplib=false, libperl=libperl.a
+    gnulibc_version='2.5'
+  Dynamic Linking:
+    dlsrc=dl_dlopen.xs, dlext=so, d_dlsymun=undef, ccdlflags='-Wl,-E'
+    cccdlflags='-fPIC', lddlflags='-shared -O2 -L/usr/local/lib -fstack-protector'
+
+
+Characteristics of this binary (from libperl): 
+  Compile-time options: HAS_TIMES PERLIO_LAYERS PERL_DONT_CREATE_GVSV
+                        PERL_HASH_FUNC_ONE_AT_A_TIME_HARD PERL_MALLOC_WRAP
+                        PERL_NEW_COPY_ON_WRITE PERL_PRESERVE_IVUV
+                        USE_64_BIT_ALL USE_64_BIT_INT USE_LARGE_FILES
+                        USE_LOCALE USE_LOCALE_COLLATE USE_LOCALE_CTYPE
+                        USE_LOCALE_NUMERIC USE_PERLIO USE_PERL_ATOF
+  Built under linux
+  Compiled at Sep 24 2014 07:38:36
+  @INC:
+    /home/other/dwimperl-linux-5.20.1-2-x86_64/perl/lib/site_perl/5.20.1/x86_64-linux
+    /home/other/dwimperl-linux-5.20.1-2-x86_64/perl/lib/site_perl/5.20.1
+    /home/other/dwimperl-linux-5.20.1-2-x86_64/perl/lib/5.20.1/x86_64-linux
+    /home/other/dwimperl-linux-5.20.1-2-x86_64/perl/lib/5.20.1
+    .
+</pre>
+
+Please note, in this example the <b>@INC</b> lists directories in <b>/home/other</b> because for this example
+I created a user account called <b>other</b>. This also shows that this installation of Perl is relocatable.
+You can put it in any directory and it will use the correct path in <b>@INC</b>.
+
+Running plain <b>perl</b> will still reach the one that came with the operating system. In order to make it more comfortable
+we can set the <b>PATH</b> environment variable to include the diretory of DWIM-Perl:  
+
+<pre>
+$ PATH=~/dwimperl-linux-5.20.1-2-x86_64/perl/bin:$PATH
+</pre>
+
+This will work in the current shell. If you'd like to make this change persisten in future shells as well,
+add this to your <b>~/.bashrc</b>.
+
+<pre>
+$ which perl
+/home/other/dwimperl-linux-5.20.1-2-x86_64/perl/bin/perl
+</pre>
+
+After this we can run
+
+<pre>
+$ perl -v
+$ perl -V
+</pre>
+
+and see the results as before.
+
+What about <b>perldoc</b>?
+
+<pre>
+$ perldoc HTML::Template
+-su: /home/other/dwimperl-linux-5.20.1-2-x86_64/perl/bin/perldoc: /home/dwimperl/dwimperl-linux-5.20.1-1-x86_64/perl/bin/perl: bad interpreter: No such file or directory
+</pre>
+
+That does not work yet, because all the perl script in the <b>/home/other/dwimperl-linux-5.20.1-2-x86_64/perl/bin/</b> directory
+have a sh-bang line pointing to the directory where this perl was originally built:
+<b>/home/dwimperl/dwimperl-linux-5.20.1-1-x86_64/perl/bin/perl</b> as user dwimperl.
+
+Running perldoc with the already configured perl will work, but it inconvenient:
+
+<pre>
+$ perl dwimperl-linux-5.20.1-2-x86_64/perl/bin/perldoc HTML::Template
+</pre>
+
+DWIM Perl for Linux includes a script called <b>reloc_perl</b> that will update the sh-bang lines
+of the scripts. Run the following:
+
+<pre>
+$ perl dwimperl-linux-5.20.1-2-x86_64/perl/bin/reloc_perl dwimperl-linux-5.20.1-2-x86_64/perl/bin/
+</pre>
+
+
+After that we can use <b>perldoc</b> as well:
+
+<pre>
+$ perldoc HTML::Template
+</pre>
+
+<h3>Installing new modules</h3>
+
+<pre>
+$ perldoc Template
+</pre>
+
+will tell you that the Template module cannot be found. No surprise there, it was not included in this release.
+
+Type:
+
+<pre>
+$ cpanm Template
+</pre>
+
+You will see output like this:
+
+<pre>
+--> Working on Template
+Fetching http://www.cpan.org/authors/id/A/AB/ABW/Template-Toolkit-2.26.tar.gz ... OK
+Configuring Template-Toolkit-2.26 ... OK
+==> Found dependencies: AppConfig, Test::LeakTrace
+--> Working on AppConfig
+Fetching http://www.cpan.org/authors/id/A/AB/ABW/AppConfig-1.66.tar.gz ... OK
+Configuring AppConfig-1.66 ... OK
+Building and testing AppConfig-1.66 ... OK
+Successfully installed AppConfig-1.66
+--> Working on Test::LeakTrace
+Fetching http://www.cpan.org/authors/id/G/GF/GFUJI/Test-LeakTrace-0.14.tar.gz ... OK
+Configuring Test-LeakTrace-0.14 ... OK
+Building and testing Test-LeakTrace-0.14 ... OK
+Successfully installed Test-LeakTrace-0.14
+Building and testing Template-Toolkit-2.26 ... OK
+Successfully installed Template-Toolkit-2.26
+3 distributions installed
+</pre>
+
+After that you can already read the docs of Template:
+
+<pre>
+$ perldoc Template
+</pre>
+
+and of course you can also use it in your code.
+
+
+You can even check the location of the newly installed Template module:
+
+<pre>
+$ perldoc -l Template
+</pre>
+
+Which in this case was
+
+<pre>
+/home/other/dwimperl-linux-5.20.1-2-x86_64/perl/lib/site_perl/5.20.1/x86_64-linux/Template.pm
+</pre>
+
+
+
+
 
