@@ -1,4 +1,4 @@
-=title DWIM Perl for Linux - perl 5.20.1 - v2
+=title DWIM Perl for Linux - perl 5.20.1 - v6
 
 <img src="/img/alien/linux-logo.png" alt="Linux" />
 <p>
@@ -8,18 +8,32 @@ This is a distribution of perl 5.20.1 with a some additional CPAN-modules.
 Content:
 <ul>
 <li>perl 5.20.1</li>
-<li>For included modules see the enabled(!) entries in <a href="https://github.com/dwimperl/dwimperl-linux/blob/dwimperl-linux-5.20.1-2/cpanfile">this cpanfile</a></li>
+<li>For included modules see the enabled(!) entries in <a href="https://github.com/dwimperl/dwimperl-linux/blob/dwimperl-linux-5.20.1-6/cpanfile">this cpanfile</a></li>
 </ul>
 
+<h2>Update</h2>
+
+<p>
+Shortly after the announcement a few updates were released including some third-party C-libraries and many more CPAN modules.
+Below you can find the links to the tar.gz files and the respective GitHub tags. The instructions below were also adjusted.
+</p>
+
+<ul>
+  <li>2014.09.25 <a href="/download/dwimperl-linux-5.20.1-2-x86_64.tar.gz">DWIM Perl 5.20.1.2 for Linux</a> (<a href="https://github.com/dwimperl/dwimperl-linux/tree/dwimperl-linux-5.20.1-2">tag</a>)</li>
+  <li>2014.09.25 <a href="/download/dwimperl-linux-5.20.1-3-x86_64.tar.gz">DWIM Perl 5.20.1.3 for Linux</a> (<a href="https://github.com/dwimperl/dwimperl-linux/tree/dwimperl-linux-5.20.1-3">tag</a>)</li>
+  <li>2014.09.26 <a href="/download/dwimperl-linux-5.20.1-4-x86_64.tar.gz">DWIM Perl 5.20.1.4 for Linux</a> (<a href="https://github.com/dwimperl/dwimperl-linux/tree/dwimperl-linux-5.20.1-4">tag</a>)</li>
+  <li>2014.09.26 <a href="/download/dwimperl-linux-5.20.1-5-x86_64.tar.gz">DWIM Perl 5.20.1.5 for Linux</a> (<a href="https://github.com/dwimperl/dwimperl-linux/tree/dwimperl-linux-5.20.1-5">tag</a> 41Mb zipped, 178Mb unzipped)</li>
+  <li>2014.09.27 <a href="/download/dwimperl-linux-5.20.1-6-x86_64.tar.gz">DWIM Perl 5.20.1.6 for Linux</a> (<a href="https://github.com/dwimperl/dwimperl-linux/tree/dwimperl-linux-5.20.1-6">tag</a> Mb zipped, Mb unzipped)</li>
+</ul>
 
 <h3>Installation Instructions:</h3>
 
 <pre>
 $ cd
-$ wget http://dwimperl.com/download/dwimperl-linux-5.20.1-2-x86_64.tar.gz
-$ tar xzf dwimperl-linux-5.20.1-2-x86_64.tar.gz
-$ PATH=~/dwimperl-linux-5.20.1-2-x86_64/perl/bin:$PATH        # Add this to your ~/.bashrc to make it persistent
-$ perl dwimperl-linux-5.20.1-2-x86_64/perl/bin/reloc_perl dwimperl-linux-5.20.1-2-x86_64/perl/bin/
+$ wget http://dwimperl.com/download/dwimperl-linux-5.20.1-6-x86_64.tar.gz
+$ tar xzf dwimperl-linux-5.20.1-6-x86_64.tar.gz
+$ PATH=~/dwimperl-linux-5.20.1-6-x86_64/perl/bin:$PATH        # Add this to your ~/.bashrc to make it persistent
+$ perl dwimperl-linux-5.20.1-6-x86_64/perl/bin/reloc_perl dwimperl-linux-5.20.1-6-x86_64/perl/bin/
 </pre>
 
 To install additional CPAN modules type
@@ -28,7 +42,7 @@ To install additional CPAN modules type
 $ cpanm Module::Name
 </pre>
 
-<a href="/download/dwimperl-linux-5.20.1-2-x86_64.tar.gz"><img src="/img/download.png" alt="DWIM Perl 5.20.1.2 for Linux" /></a>
+<a href="/download/dwimperl-linux-5.20.1-6-x86_64.tar.gz"><img src="/img/download.png" alt="DWIM Perl 5.20.1.6 for Linux" /></a>
 <p>
 released on 2014.09.25.
 </p>
@@ -39,19 +53,19 @@ released on 2014.09.25.
 DWIM Perl for Linux is being developed in the
 <a href="https://github.com/dwimperl/dwimperl-linux">dwimperl-linux</a> GitHub repository.
 The current version has been tagged
-<a href="https://github.com/dwimperl/dwimperl-linux/tree/dwimperl-linux-5.20.1-2">dwimperl-linux-5.20.1-2</a>.
+<a href="https://github.com/dwimperl/dwimperl-linux/tree/dwimperl-linux-5.20.1-6">dwimperl-linux-5.20.1-6</a>.
 
 Installation starts with the following:
 
 <pre>
-$ wget http://dwimperl.com/download/dwimperl-linux-5.20.1-2-x86_64.tar.gz
-$ tar xzf dwimperl-linux-5.20.1-2-x86_64.tar.gz
+$ wget http://dwimperl.com/download/dwimperl-linux-5.20.1-6-x86_64.tar.gz
+$ tar xzf dwimperl-linux-5.20.1-6-x86_64.tar.gz
 </pre>
 
 Then we can try if it works by typing:
 
 <pre>
-$ ./dwimperl-linux-5.20.1-2-x86_64/perl/bin/perl -v
+$ ./dwimperl-linux-5.20.1-6-x86_64/perl/bin/perl -v
 </pre>
 
 
@@ -75,7 +89,7 @@ Internet, point your browser at http://www.perl.org/, the Perl Home Page.
 We can also try the longer version:
 
 <pre>
-$ ./dwimperl-linux-5.20.1-2-x86_64/perl/bin/perl -V
+$ ./dwimperl-linux-5.20.1-6-x86_64/perl/bin/perl -V
 </pre>
 
 That will give the following output:
@@ -122,10 +136,10 @@ Characteristics of this binary (from libperl):
   Built under linux
   Compiled at Sep 24 2014 07:38:36
   @INC:
-    /home/other/dwimperl-linux-5.20.1-2-x86_64/perl/lib/site_perl/5.20.1/x86_64-linux
-    /home/other/dwimperl-linux-5.20.1-2-x86_64/perl/lib/site_perl/5.20.1
-    /home/other/dwimperl-linux-5.20.1-2-x86_64/perl/lib/5.20.1/x86_64-linux
-    /home/other/dwimperl-linux-5.20.1-2-x86_64/perl/lib/5.20.1
+    /home/other/dwimperl-linux-5.20.1-6-x86_64/perl/lib/site_perl/5.20.1/x86_64-linux
+    /home/other/dwimperl-linux-5.20.1-6-x86_64/perl/lib/site_perl/5.20.1
+    /home/other/dwimperl-linux-5.20.1-6-x86_64/perl/lib/5.20.1/x86_64-linux
+    /home/other/dwimperl-linux-5.20.1-6-x86_64/perl/lib/5.20.1
     .
 </pre>
 
@@ -137,7 +151,7 @@ Running plain <b>perl</b> will still reach the one that came with the operating 
 we can set the <b>PATH</b> environment variable to include the diretory of DWIM-Perl:  
 
 <pre>
-$ PATH=~/dwimperl-linux-5.20.1-2-x86_64/perl/bin:$PATH
+$ PATH=~/dwimperl-linux-5.20.1-6-x86_64/perl/bin:$PATH
 </pre>
 
 This will work in the current shell. If you'd like to make this change persisten in future shells as well,
@@ -145,7 +159,7 @@ add this to your <b>~/.bashrc</b>.
 
 <pre>
 $ which perl
-/home/other/dwimperl-linux-5.20.1-2-x86_64/perl/bin/perl
+/home/other/dwimperl-linux-5.20.1-6-x86_64/perl/bin/perl
 </pre>
 
 After this we can run
@@ -163,24 +177,24 @@ What about <b>perldoc</b>?
 
 <pre>
 $ perldoc HTML::Template
--su: /home/other/dwimperl-linux-5.20.1-2-x86_64/perl/bin/perldoc: /home/dwimperl/dwimperl-linux-5.20.1-1-x86_64/perl/bin/perl: bad interpreter: No such file or directory
+-su: /home/other/dwimperl-linux-5.20.1-6-x86_64/perl/bin/perldoc: /home/dwimperl/dwimperl-linux-5.20.1-1-x86_64/perl/bin/perl: bad interpreter: No such file or directory
 </pre>
 
-That does not work yet, because all the perl script in the <b>/home/other/dwimperl-linux-5.20.1-2-x86_64/perl/bin/</b> directory
+That does not work yet, because all the perl script in the <b>/home/other/dwimperl-linux-5.20.1-6-x86_64/perl/bin/</b> directory
 have a sh-bang line pointing to the directory where this perl was originally built:
 <b>/home/dwimperl/dwimperl-linux-5.20.1-1-x86_64/perl/bin/perl</b> as user dwimperl.
 
 Running perldoc with the already configured perl will work, but it inconvenient:
 
 <pre>
-$ perl dwimperl-linux-5.20.1-2-x86_64/perl/bin/perldoc HTML::Template
+$ perl dwimperl-linux-5.20.1-6-x86_64/perl/bin/perldoc HTML::Template
 </pre>
 
 DWIM Perl for Linux includes a script called <b>reloc_perl</b> that will update the sh-bang lines
 of the scripts. Run the following:
 
 <pre>
-$ perl dwimperl-linux-5.20.1-2-x86_64/perl/bin/reloc_perl dwimperl-linux-5.20.1-2-x86_64/perl/bin/
+$ perl dwimperl-linux-5.20.1-6-x86_64/perl/bin/reloc_perl dwimperl-linux-5.20.1-6-x86_64/perl/bin/
 </pre>
 
 
@@ -244,21 +258,8 @@ $ perldoc -l Template
 Which in this case was
 
 <pre>
-/home/other/dwimperl-linux-5.20.1-2-x86_64/perl/lib/site_perl/5.20.1/x86_64-linux/Template.pm
+/home/other/dwimperl-linux-5.20.1-6-x86_64/perl/lib/site_perl/5.20.1/x86_64-linux/Template.pm
 </pre>
 
 
-<h2>Update</h2>
-
-<p>
-Shortly after the announcement a few updates were released including some third-party C-libraries and many more CPAN modules.
-Below you can find the links to the tar.gz files and the respective GitHub tags.
-</p>
-
-<ul>
-  <li>2014.09.25 <a href="/download/dwimperl-linux-5.20.1-2-x86_64.tar.gz">DWIM Perl 5.20.1.2 for Linux</a> (<a href="https://github.com/dwimperl/dwimperl-linux/tree/dwimperl-linux-5.20.1-2">tag</a>)</li>
-  <li>2014.09.25 <a href="/download/dwimperl-linux-5.20.1-3-x86_64.tar.gz">DWIM Perl 5.20.1.3 for Linux</a> (<a href="https://github.com/dwimperl/dwimperl-linux/tree/dwimperl-linux-5.20.1-3">tag</a>)</li>
-  <li>2014.09.26 <a href="/download/dwimperl-linux-5.20.1-4-x86_64.tar.gz">DWIM Perl 5.20.1.4 for Linux</a> (<a href="https://github.com/dwimperl/dwimperl-linux/tree/dwimperl-linux-5.20.1-4">tag</a>)</li>
-  <li>2014.09.26 <a href="/download/dwimperl-linux-5.20.1-5-x86_64.tar.gz">DWIM Perl 5.20.1.5 for Linux</a> (<a href="https://github.com/dwimperl/dwimperl-linux/tree/dwimperl-linux-5.20.1-5">tag</a>)</li>
-</ul>
 
