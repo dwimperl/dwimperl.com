@@ -1,4 +1,4 @@
-=title DWIM Perl for Linux - perl 5.20.1 - v9
+=title DWIM Perl for Linux - perl 5.20.1 - v10
 
 <img src="/img/alien/linux-logo.png" alt="Linux" />
 <p>
@@ -8,8 +8,34 @@ This is a distribution of perl 5.20.1 with a some additional CPAN-modules.
 Content:
 <ul>
 <li>perl 5.20.1</li>
-<li>For included modules see the entries in <a href="https://github.com/dwimperl/dwimperl-linux/blob/dwimperl-linux-5.20.1-9/cpanfile">this cpanfile</a></li>
+<li>For included modules see the entries in <a href="https://github.com/dwimperl/dwimperl-linux/blob/dwimperl-linux-5.20.1-10/cpanfile">this cpanfile</a></li>
 </ul>
+
+
+<!--
+
+<h2>Applications</h2>
+<p>
+Besides CPAN modules there are also a few Applications included in DWIM Perl for Linux.
+Some of these are distributed as CPAN modules and so they are included as CPAN modules,
+other are (or will be) pulled in from their non-CPAN source distribution.
+</p>
+<p>
+<ul>
+  <li><a href="https://metacpan.org/pod/Rex">Rex</a> aka. <a href="http://www.rexify.org/">(R)?ex</a>, Remote Execution for DevOps</li>
+  <li><a href="https://metacpan.org/pod/Galileo">Galileo</a> - a simple modern CMS built on Mojolicious.</li> 
+  <li><a href="https://metacpan.org/pod/BusyBird">BusyBird</a>, a multi-level Web-based timeline viewer</li>
+</ul>
+
+
+Web servers or applications servers
+
+<ul>
+  <li><a href="https://metacpan.org/pod/Starman">Starman</a></li>
+  <li><a href="https://metacpan.org/pod/Twiggy">Twiggy</a></li>
+</ul>
+</p>
+-->
 
 <h2>Update</h2>
 
@@ -27,22 +53,23 @@ Below you can find the links to the tar.gz files and the respective GitHub tags.
   <li>2014.09.28 <a href="/download/dwimperl-linux-5.20.1-7-x86_64.tar.gz">DWIM Perl 5.20.1.7 for Linux</a> (<a href="https://github.com/dwimperl/dwimperl-linux/tree/dwimperl-linux-5.20.1-7">tag</a> 50Mb zipped, 239Mb unzipped)</li>
   <li>2014.09.28 <a href="/download/dwimperl-linux-5.20.1-8-x86_64.tar.gz">DWIM Perl 5.20.1.8 for Linux</a> (<a href="https://github.com/dwimperl/dwimperl-linux/tree/dwimperl-linux-5.20.1-8">tag</a> 53Mb zipped, 252Mb unzipped)</li>
   <li>2014.09.29 <a href="/download/dwimperl-linux-5.20.1-9-x86_64.tar.gz">DWIM Perl 5.20.1.9 for Linux</a> (<a href="https://github.com/dwimperl/dwimperl-linux/tree/dwimperl-linux-5.20.1-9">tag</a> 56Mb zipped, 293Mb unzipped)</li>
+  <li>2014.10.02 <a href="/download/dwimperl-linux-5.20.1-10-x86_64.tar.gz">DWIM Perl 5.20.1.10 for Linux</a> (<a href="https://github.com/dwimperl/dwimperl-linux/tree/dwimperl-linux-5.20.1-10">tag</a> 63Mb zipped, 330Mb unzipped)</li>
 </ul>
 
-<h3>Installation Instructions:</h3>
+<h2>Installation Instructions</h2>
 
 <pre>
 $ cd
-$ wget http://dwimperl.com/download/dwimperl-linux-5.20.1-9-x86_64.tar.gz
-$ tar xzf dwimperl-linux-5.20.1-9-x86_64.tar.gz
-$ source $(pwd)/dwimperl-linux-5.20.1-9-x86_64/dwim.sh
-$ perl dwimperl-linux-5.20.1-9-x86_64/perl/bin/reloc_perl
+$ wget http://dwimperl.com/download/dwimperl-linux-5.20.1-10-x86_64.tar.gz
+$ tar xzf dwimperl-linux-5.20.1-10-x86_64.tar.gz
+$ source $(pwd)/dwimperl-linux-5.20.1-10-x86_64/dwim.sh
+$ perl dwimperl-linux-5.20.1-10-x86_64/perl/bin/reloc_perl
 </pre>
 
 In order to make the change persistent , add the resul of the following command to ~/.bashrc:
 
 <pre>
-$ echo source $(pwd)/dwimperl-linux-5.20.1-9-x86_64/dwim.sh
+$ echo source $(pwd)/dwimperl-linux-5.20.1-10-x86_64/dwim.sh
 </pre>
 
 That's it.
@@ -54,9 +81,9 @@ To install additional CPAN modules type
 $ cpanm Module::Name
 </pre>
 
-<a href="/download/dwimperl-linux-5.20.1-9-x86_64.tar.gz"><img src="/img/download.png" alt="DWIM Perl 5.20.1.9 for Linux" /></a>
+<a href="/download/dwimperl-linux-5.20.1-10-x86_64.tar.gz"><img src="/img/download.png" alt="DWIM Perl 5.20.1.10 for Linux" /></a>
 <p>
-released between 2014.09.25 and 2014.09.29.
+released between 2014.09.25 and 2014.10.02.
 </p>
 
 <h2>The detailed story</h2>
@@ -65,19 +92,19 @@ released between 2014.09.25 and 2014.09.29.
 DWIM Perl for Linux is being developed in the
 <a href="https://github.com/dwimperl/dwimperl-linux">dwimperl-linux</a> GitHub repository.
 The current version has been tagged
-<a href="https://github.com/dwimperl/dwimperl-linux/tree/dwimperl-linux-5.20.1-9">dwimperl-linux-5.20.1-9</a>.
+<a href="https://github.com/dwimperl/dwimperl-linux/tree/dwimperl-linux-5.20.1-10">dwimperl-linux-5.20.1-10</a>.
 
 Installation starts with the following:
 
 <pre>
-$ wget http://dwimperl.com/download/dwimperl-linux-5.20.1-9-x86_64.tar.gz
-$ tar xzf dwimperl-linux-5.20.1-9-x86_64.tar.gz
+$ wget http://dwimperl.com/download/dwimperl-linux-5.20.1-10-x86_64.tar.gz
+$ tar xzf dwimperl-linux-5.20.1-10-x86_64.tar.gz
 </pre>
 
 Then we can try if it works by typing:
 
 <pre>
-$ ./dwimperl-linux-5.20.1-9-x86_64/perl/bin/perl -v
+$ ./dwimperl-linux-5.20.1-10-x86_64/perl/bin/perl -v
 </pre>
 
 
@@ -101,7 +128,7 @@ Internet, point your browser at http://www.perl.org/, the Perl Home Page.
 We can also try the longer version:
 
 <pre>
-$ ./dwimperl-linux-5.20.1-9-x86_64/perl/bin/perl -V
+$ ./dwimperl-linux-5.20.1-10-x86_64/perl/bin/perl -V
 </pre>
 
 That will give the following output:
@@ -148,10 +175,10 @@ Characteristics of this binary (from libperl):
   Built under linux
   Compiled at Sep 24 2014 07:38:36
   @INC:
-    /home/other/dwimperl-linux-5.20.1-9-x86_64/perl/lib/site_perl/5.20.1/x86_64-linux
-    /home/other/dwimperl-linux-5.20.1-9-x86_64/perl/lib/site_perl/5.20.1
-    /home/other/dwimperl-linux-5.20.1-9-x86_64/perl/lib/5.20.1/x86_64-linux
-    /home/other/dwimperl-linux-5.20.1-9-x86_64/perl/lib/5.20.1
+    /home/other/dwimperl-linux-5.20.1-10-x86_64/perl/lib/site_perl/5.20.1/x86_64-linux
+    /home/other/dwimperl-linux-5.20.1-10-x86_64/perl/lib/site_perl/5.20.1
+    /home/other/dwimperl-linux-5.20.1-10-x86_64/perl/lib/5.20.1/x86_64-linux
+    /home/other/dwimperl-linux-5.20.1-10-x86_64/perl/lib/5.20.1
     .
 </pre>
 
@@ -167,7 +194,7 @@ environment variable. In addition we had to set the <b>LD_LIBRARY_PATH</b> varia
 <b>dwim.sh</b> shell script that comes with the distribution. That's what we need to load at this point:
 
 <pre>
-$ source /home/other/dwimperl-linux-5.20.1-9-x86_64/dwim.sh
+$ source /home/other/dwimperl-linux-5.20.1-10-x86_64/dwim.sh
 </pre>
 
 This will work in the current shell. If you'd like to make this change persisten in future shells as well,
@@ -177,7 +204,7 @@ Now we can try:
 
 <pre>
 $ which perl
-/home/other/dwimperl-linux-5.20.1-9-x86_64/perl/bin/perl
+/home/other/dwimperl-linux-5.20.1-10-x86_64/perl/bin/perl
 </pre>
 
 After this we can run
@@ -195,17 +222,17 @@ What about <b>perldoc</b>?
 
 <pre>
 $ perldoc HTML::Template
--su: /home/other/dwimperl-linux-5.20.1-9-x86_64/perl/bin/perldoc: /home/dwimperl/dwimperl-linux-5.20.1-1-x86_64/perl/bin/perl: bad interpreter: No such file or directory
+-su: /home/other/dwimperl-linux-5.20.1-10-x86_64/perl/bin/perldoc: /home/dwimperl/dwimperl-linux-5.20.1-1-x86_64/perl/bin/perl: bad interpreter: No such file or directory
 </pre>
 
-That does not work yet, because all the perl script in the <b>/home/other/dwimperl-linux-5.20.1-9-x86_64/perl/bin/</b> directory
+That does not work yet, because all the perl script in the <b>/home/other/dwimperl-linux-5.20.1-10-x86_64/perl/bin/</b> directory
 have a sh-bang line pointing to the directory where this perl was originally built:
 <b>/home/dwimperl/dwimperl-linux-5.20.1-1-x86_64/perl/bin/perl</b> as user dwimperl.
 
 Running perldoc with the already configured perl will work, but it inconvenient:
 
 <pre>
-$ perl dwimperl-linux-5.20.1-9-x86_64/perl/bin/perldoc HTML::Template
+$ perl dwimperl-linux-5.20.1-10-x86_64/perl/bin/perldoc HTML::Template
 </pre>
 
 DWIM Perl for Linux includes a script called <b>reloc_perl</b> that will update the sh-bang lines
@@ -215,7 +242,7 @@ of the scripts. Run the following:
 $ reloc_perl
 </pre>
 
-It won't print anything but will do its job updating the sh-bang in every script in <b>dwimperl-linux-5.20.1-9-x86_64/perl/bin/</b>.
+It won't print anything but will do its job updating the sh-bang in every script in <b>dwimperl-linux-5.20.1-10-x86_64/perl/bin/</b>.
 
 After that we can use <b>perldoc</b> as well:
 
@@ -265,7 +292,7 @@ $ perldoc -l Acme::Bleach
 Which in this case was
 
 <pre>
-/home/other/dwimperl-linux-5.20.1-9-x86_64/perl/lib/site_perl/5.20.1/x86_64-linux/Acme/Bleach.pm
+/home/other/dwimperl-linux-5.20.1-10-x86_64/perl/lib/site_perl/5.20.1/x86_64-linux/Acme/Bleach.pm
 </pre>
 
 
