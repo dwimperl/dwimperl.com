@@ -93,29 +93,46 @@
 }
 </style>
           <div class="well sidebar-nav">
-<p style="text-align:center">
-<a href="/windows.html"><img src="/img/alien/windows-logo.png" alt="for Windows"></a>
-<a href="/linux.html"><img src="/img/alien/linux-logo.png" alt="for Linux"></a>
-</p>
-<hr>
-<p>
-Want to get notified when a new release is published?
-</p>
-<p>
-The <a href="http://perlweekly.com/">Perl Weekly newsletter</a>
-includes announcements of DWIM Perl and major Perl projects
-as they are made available by their developers.
-</p>
-<hr>
-<p>
-New releases will be also announced on our new <a href="http://www.facebook.com/DWIM.Perl">Facebook page</a>
-and on our <a href="https://plus.google.com/b/114304226993160810646/">Google+ Page</a>.
-</p>
-<p>
-To get started with DWIM Perl, check out the <a href="http://perlmaven.com/perl-tutorial">Perl Tutorial</a>
-written by <a href="http://szabgab.com/">Gabor Szabo</a>, the maintainer of DWIM Perl.
-</p>
+               <p style="text-align:center">
+               <a href="/windows.html"><img src="/img/alien/windows-logo.png" alt="for Windows"></a>
+               <a href="/linux.html"><img src="/img/alien/linux-logo.png" alt="for Linux"></a>
+               </p>
+               <hr>
+               <p>
+               Want to get notified when a new release is published?
+               </p>
+               <p>
+               The <a href="http://perlweekly.com/">Perl Weekly newsletter</a>
+               includes announcements of DWIM Perl and major Perl projects
+               as they are made available by their developers.
+               </p>
+               <hr>
+               <p>
+               New releases will be also announced on our new <a href="http://www.facebook.com/DWIM.Perl">Facebook page</a>
+               and on our <a href="https://plus.google.com/b/114304226993160810646/">Google+ Page</a>.
+               </p>
+               <p>
+               To get started with DWIM Perl, check out the <a href="http://perlmaven.com/perl-tutorial">Perl Tutorial</a>
+               written by <a href="http://szabgab.com/">Gabor Szabo</a>, the maintainer of DWIM Perl.
+               </p>
+
           </div><!--/.well -->
+
+
+          <div class="well sidebar-nav">
+              <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+              <!-- dwimperl_tall_right -->
+              <ins class="adsbygoogle"
+                   style="display:inline-block;width:300px;height:600px"
+                   data-ad-client="ca-pub-7760157643054954"
+                   data-ad-slot="5300214539"></ins>
+              <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+          </div><!--/.well -->
+
+
+
         </div><!--/span-->
 
       </div><!--/row-->
