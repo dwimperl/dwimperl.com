@@ -1,0 +1,47 @@
+=title Perl 6 for Linux
+
+The Rakudo team provides a source code distribution that you can <a href="http://rakudo.org/downloads/star/">download</a>.
+
+<img src="/img/alien/linux-logo.png" alt="Linux" />
+
+<p>
+This package contains <a href="http://rakudo.org/2014/12/27/update-to-rakudo-star-release-2014-12/">Perl 6 Rakudo Star 2014.12.1</a> compiled
+for Linux specifically to be used with <a href="http://perl6maven.com/continuous-integration-for-perl6-modules-using-travis-ci">Travis-CI</a>
+but it can be used elsewhere too. The whole <a href="http://perl6maven.com/">Perl 6 Maven</a> runs on it. AFAIK the only limitation
+is that it needs to be installed in the <b>/user/travis</b> directory as path-es are hard-coded.
+</p>
+
+<pre>
+$ sudo mkdir /home/travis
+$ sudo chown foobar.foobar /home/travis
+$ cd /home/travis
+$ wget http://dwimperl.com/download/rakudo-2014-12-1-2.tar.gz
+$ tar xzf rakudo-2014-12-1-2.tar.gz
+$ cd
+
+$ /home/travis/rakudo-2014-12-1-2/bin/perl6 -v
+This is perl6 version 2014.12 built on MoarVM version 2014.12
+</pre>
+
+You can add <b>/home/travis/rakudo-2014-12-1-2/bin</b> to your <b>PATH</b> environment variable
+
+<pre>
+export PATH=/home/travis/rakudo-2014-12-1-2/bin:$PATH
+</pre>
+
+and then you don't need to type in the full path every time you run a script:
+
+<pre>
+$ which perl6
+/home/travis/rakudo-2014-12-1-2/bin/perl6
+
+$ perl6 -v
+This is perl6 version 2014.12 built on MoarVM version 2014.12
+</pre>
+
+
+<img src="/img/alien/windows-logo.png" alt="Windows" />
+
+The Rakudo team provides a source code distribution and and two msi installers for Windows with two different backends compiled
+in. you can <a href="http://rakudo.org/downloads/star/">download</a> those from the <a href="http://rakudo.org/">Rakudo</a> web site.
+</p>
