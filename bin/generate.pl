@@ -35,7 +35,7 @@ foreach my $p (@pages) {
 
 	$params{subtitle} ||= $params{title};
 
-	for my $os (qw(windows linux history legal)) {
+	for my $os (qw(windows linux perl6 history legal)) {
 		if ($p eq "$os.html") {
 			$params{$os} = 1;
 		}

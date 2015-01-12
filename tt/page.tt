@@ -51,6 +51,7 @@
             <ul class="nav">
               <li <% IF windows %>class="active"<% END %> ><a href="/windows.html">Windows</a></li>
               <li <% IF linux   %>class="active"<% END %> ><a href="/linux.html">Linux</a></li>
+              <li <% IF perl6   %>class="active"<% END %> ><a href="/perl6.html">Perl 6</a></li>
               <li <% IF history %>class="active"<% END %> ><a href="/history.html">Earlier releases</a></li>
             </ul>
             <ul class="nav pull-right">
