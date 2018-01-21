@@ -42,7 +42,7 @@ foreach my $p (@pages) {
 	}
 	$tt->process('page.tt', \%params, "html/$p") or die $tt->error;
 	$sitemap .= qq{  <url>\n};
-	$sitemap .= qq{    <loc>http://dwimperl.com/$p</loc>\n};
+	$sitemap .= qq{    <loc>http://dwimperl.szabgab.com/$p</loc>\n};
 	$sitemap .= qq{    <lastmod>$now</lastmod>\n};
 	$sitemap .= qq{  </url>\n};
 }

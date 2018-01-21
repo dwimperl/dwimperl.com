@@ -1,1 +1,1 @@
-Sitemap: http://dwimperl.com/sitemap.xml
+Sitemap: http://dwimperl.szabgab.com/sitemap.xml
